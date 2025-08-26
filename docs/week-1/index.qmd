@@ -9,7 +9,7 @@ format:
      theme: [custom.scss]
      scrollable: true
      logo: AGSMlogo.jpeg
-     footer: "DADM: Week 1 (28 Aug 2024)"
+     footer: "DADM: Week 1 (26 Aug 2025)"
      chalkboard: true
      html-math-method: katex
      incremental: true
@@ -46,27 +46,12 @@ options(
 - Let's walk through that.
 - On Canvas, Files > Syllabus
 
+## Administrative Things
+
+- The Last Day?
+- The Group Task: Global Strategic Trends
+
 # A Bit of First Day Work
-
-## Some Quick R and Excel Tools
-
-:::: {.columns}
-
-::: {.column width="30%"}
-
-- Everything is built around R and RStudio.
-- RMarkdown is my tool of choice.  
-- In fact, these slides are markdown rendered as reveal.js  
-
-:::
-
-::: {.column width="70%"}
-
-![RMD](./images/RMD.png)
-
-:::
-
-::::
 
 ## Some Example Data
 
@@ -83,26 +68,6 @@ Bonds
 load(url("https://github.com/robertwwalker/DADMStuff/raw/master/R-Workspace-Lecture-1.RData"))
 Bonds %>% knitr::kable()
 ```
-
-## My Current Thinking
-
-An analogy: $R$ is like learning a foreign language.  It has the essential elements of   
-
-- syntax 
-- structure  
-- scoping  
-
-- Learning how R thinks and communicates is crucial and that is largely an interaction between you and $R$.
-
-- **$R$ is a language for data.**
-
-- But to save you from having to learn that alongside everything else, we will make use of a graphical user interface that gets us a great deal of power.
-
-## A Preview
-
-![V1](./images/Screenshot 2024-08-27 at 3.27.44 PM.png)
-![V2](./images/Screenshot 2024-08-27 at 3.27.15 PM.png)
-
 
 ## Some Essential Excel
 
@@ -284,35 +249,17 @@ Bonds %>%
 
 ## Installing packages
 
-R works by packages that add functionality.  The process is two parts: install a package [install.packages("package")] and then use it [library(package)].
-
-R can handle installation for you.  In general, unless you know what it means, avoid compiling from source; binary packages are preferred.  If that sounds unintelligible, do not fret.
-
-[The radiant install page](https://radiant-rstats.github.io/docs/install.html) should provide a useful guide.
-
-For your homework assignment, you will need to acquire R, RStudio, and a package called Radiant.
-
-```{r eval=FALSE, tidy=FALSE}
-install.packages(c("radiant"))
-```
-
-For a brief foray into R Graphics,
-
-```{r eval=FALSE, tidy=FALSE}
-install.packages(c("esquisse"))
-```
-
-
-The [RStudio IDE](https://www.rstudio.com/products/rstudio/), is highly recommended but you do not have to.  The command line or the base GUI work but you will have to type to render RMarkdown and I use it alot.
 
 ## Takeaways
 
-1. The biggest barrier to learning from data is not having a useful pipeline.  
-2. Data should be tidy and easy to analyse.  We spend time analysing rather than cleaning.  
-3. R makes getting data in and out easy.  It links with tons of things.  
-4. R with Markdown make automated report writing and other literate uses of data, graphics, and text easy to do.  
-5. The assignment for this week involves setting up our software infrastructure for the term.  
+1. Data are everywhere; the biggest barrier is often curiosity.  
+2. In your management career, data should play roles throughout decisions.
 
+## Your Task for Next Time:
+
+1. Read Toulmin and examine the slide excerpt.
+2. Prepare to discuss: what is a large language model?
+3. Are LLM's authoritative sources?  What managerial challenges does this present?
 
 ## A Postscript
 
@@ -373,3 +320,4 @@ abline(h = 0)
 AxisInPercent(1, pretty(c(0, d)))
 polygon(M + c(-1, 1, 0) * 1, c(-1.2, -1.2, -0.1), border = COL[4], col = COL[4])
 ```
+

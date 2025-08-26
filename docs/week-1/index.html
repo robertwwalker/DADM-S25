@@ -8,7 +8,7 @@
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.24">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Robert W. Walker">
   <title>Data Analysis, Modeling, and Decision-Making</title>
@@ -42,7 +42,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -96,22 +96,6 @@
     code span.wa { color: #dcc6e0; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -436,30 +420,17 @@ Robert W. Walker
 <li class="fragment">On Canvas, Files &gt; Syllabus</li>
 </ul>
 </section>
+<section id="administrative-things" class="slide level2">
+<h2>Administrative Things</h2>
+<ul>
+<li class="fragment">The Last Day?</li>
+<li class="fragment">The Group Task: Global Strategic Trends</li>
+</ul>
+</section>
 <section>
 <section id="a-bit-of-first-day-work" class="title-slide slide level1 center">
 <h1>A Bit of First Day Work</h1>
 
-</section>
-<section id="some-quick-r-and-excel-tools" class="slide level2">
-<h2>Some Quick R and Excel Tools</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<ul>
-<li class="fragment">Everything is built around R and RStudio.</li>
-<li class="fragment">RMarkdown is my tool of choice.<br>
-</li>
-<li class="fragment">In fact, these slides are markdown rendered as reveal.js</li>
-</ul>
-</div><div class="column" style="width:70%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="./images/RMD.png"></p>
-<figcaption>RMD</figcaption>
-</figure>
-</div>
-</div>
-</div>
 </section>
 <section id="some-example-data" class="slide level2">
 <h2>Some Example Data</h2>
@@ -476,7 +447,7 @@ Robert W. Walker
 <h2>The Data</h2>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <colgroup>
 <col style="width: 10%">
 <col style="width: 20%">
@@ -2531,23 +2502,6 @@ Robert W. Walker
 </div>
 </div>
 </section>
-<section id="my-current-thinking" class="slide level2">
-<h2>My Current Thinking</h2>
-<p>An analogy: <span class="math inline">R</span> is like learning a foreign language. It has the essential elements of</p>
-<ul>
-<li class="fragment"><p>syntax</p></li>
-<li class="fragment"><p>structure<br>
-</p></li>
-<li class="fragment"><p>scoping</p></li>
-<li class="fragment"><p>Learning how R thinks and communicates is crucial and that is largely an interaction between you and <span class="math inline">R</span>.</p></li>
-<li class="fragment"><p><strong><span class="math inline">R</span> is a language for data.</strong></p></li>
-<li class="fragment"><p>But to save you from having to learn that alongside everything else, we will make use of a graphical user interface that gets us a great deal of power.</p></li>
-</ul>
-</section>
-<section id="a-preview" class="slide level2">
-<h2>A Preview</h2>
-<p><img data-src="./images/Screenshot%202024-08-27%20at%203.27.44%20PM.png" alt="V1"> <img data-src="./images/Screenshot%202024-08-27%20at%203.27.15%20PM.png" alt="V2"></p>
-</section>
 <section id="some-essential-excel" class="slide level2">
 <h2>Some Essential Excel</h2>
 <ul>
@@ -2644,7 +2598,7 @@ Robert W. Walker
 <span id="cb4-6"><a href=""></a>    kableExtra<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <colgroup>
 <col style="width: 34%">
 <col style="width: 15%">
@@ -2702,7 +2656,7 @@ Robert W. Walker
 <span id="cb5-6"><a href=""></a>    kableExtra<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<table style="width:100%;">
+<table class="caption-top" style="width:100%;">
 <colgroup>
 <col style="width: 28%">
 <col style="width: 16%">
@@ -2783,7 +2737,7 @@ Robert W. Walker
 <h2><code>skim()</code></h2>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <caption>Data summary</caption>
 <tbody>
 <tr class="odd">
@@ -2821,7 +2775,7 @@ Robert W. Walker
 </tbody>
 </table>
 <p><strong>Variable type: numeric</strong></p>
-<table>
+<table class="caption-top">
 <colgroup>
 <col style="width: 11%">
 <col style="width: 20%">
@@ -2987,37 +2941,21 @@ Robert W. Walker
 </section>
 <section id="installing-packages" class="slide level2">
 <h2>Installing packages</h2>
-<p>R works by packages that add functionality. The process is two parts: install a package [install.packages(“package”)] and then use it [library(package)].</p>
-<p>R can handle installation for you. In general, unless you know what it means, avoid compiling from source; binary packages are preferred. If that sounds unintelligible, do not fret.</p>
-<p><a href="https://radiant-rstats.github.io/docs/install.html">The radiant install page</a> should provide a useful guide.</p>
-<p>For your homework assignment, you will need to acquire R, RStudio, and a package called Radiant.</p>
-<div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"radiant"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-<p>For a brief foray into R Graphics,</p>
-<div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"esquisse"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-<p>The <a href="https://www.rstudio.com/products/rstudio/">RStudio IDE</a>, is highly recommended but you do not have to. The command line or the base GUI work but you will have to type to render RMarkdown and I use it alot.</p>
 </section>
 <section id="takeaways" class="slide level2 scrollable">
 <h2>Takeaways</h2>
 <ol type="1">
-<li class="fragment">The biggest barrier to learning from data is not having a useful pipeline.<br>
+<li class="fragment">Data are everywhere; the biggest barrier is often curiosity.<br>
 </li>
-<li class="fragment">Data should be tidy and easy to analyse. We spend time analysing rather than cleaning.<br>
-</li>
-<li class="fragment">R makes getting data in and out easy. It links with tons of things.<br>
-</li>
-<li class="fragment">R with Markdown make automated report writing and other literate uses of data, graphics, and text easy to do.<br>
-</li>
-<li class="fragment">The assignment for this week involves setting up our software infrastructure for the term.</li>
+<li class="fragment">In your management career, data should play roles throughout decisions.</li>
+</ol>
+</section>
+<section id="your-task-for-next-time" class="slide level2 scrollable">
+<h2>Your Task for Next Time:</h2>
+<ol type="1">
+<li class="fragment">Read Toulmin and examine the slide excerpt.</li>
+<li class="fragment">Prepare to discuss: what is a large language model?</li>
+<li class="fragment">Are LLM’s authoritative sources? What managerial challenges does this present?</li>
 </ol>
 </section>
 <section id="a-postscript" class="slide level2">
@@ -3037,23 +2975,23 @@ Robert W. Walker
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href=""></a><span class="fu">library</span>(openintro)</span>
-<span id="cb8-2"><a href=""></a>d <span class="ot">&lt;-</span> loan50<span class="sc">$</span>interest_rate</span>
-<span id="cb8-3"><a href=""></a>xlim <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">0.9</span> <span class="sc">*</span> <span class="fu">min</span>(d), <span class="fl">1.05</span> <span class="sc">*</span> <span class="fu">max</span>(d))</span>
-<span id="cb8-4"><a href=""></a>round.to <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb8-5"><a href=""></a>binned <span class="ot">&lt;-</span> round.to <span class="sc">*</span> <span class="fu">round</span>(d<span class="sc">/</span>round.to)</span>
-<span id="cb8-6"><a href=""></a>tab <span class="ot">&lt;-</span> <span class="fu">table</span>(binned)</span>
-<span id="cb8-7"><a href=""></a>M <span class="ot">&lt;-</span> <span class="fu">mean</span>(d)</span>
-<span id="cb8-8"><a href=""></a>cex <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb8-9"><a href=""></a><span class="fu">plot</span>(<span class="dv">0</span>, <span class="at">type =</span> <span class="st">"n"</span>, <span class="at">xlab =</span> <span class="st">"Interest Rate, Rounded to Nearest Percent"</span>, <span class="at">ylab =</span> <span class="st">""</span>,</span>
-<span id="cb8-10"><a href=""></a>    <span class="at">axes =</span> <span class="cn">FALSE</span>, <span class="at">xlim =</span> xlim, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="fl">1.5</span> <span class="sc">*</span> <span class="fu">max</span>(tab)))</span>
-<span id="cb8-11"><a href=""></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(tab)) {</span>
-<span id="cb8-12"><a href=""></a>    <span class="fu">points</span>(<span class="fu">rep</span>(<span class="fu">as.numeric</span>(<span class="fu">names</span>(tab[i])), tab[i]), <span class="fl">1.5</span> <span class="sc">*</span> (<span class="dv">1</span><span class="sc">:</span>tab[i]) <span class="sc">-</span> <span class="fl">0.4</span>, <span class="at">pch =</span> <span class="dv">19</span>,</span>
-<span id="cb8-13"><a href=""></a>        <span class="at">col =</span> COL[<span class="dv">1</span>], <span class="at">cex =</span> <span class="dv">2</span> <span class="sc">*</span> cex)</span>
-<span id="cb8-14"><a href=""></a>}</span>
-<span id="cb8-15"><a href=""></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>)</span>
-<span id="cb8-16"><a href=""></a><span class="fu">AxisInPercent</span>(<span class="dv">1</span>, <span class="fu">pretty</span>(<span class="fu">c</span>(<span class="dv">0</span>, d)))</span>
-<span id="cb8-17"><a href=""></a><span class="fu">polygon</span>(M <span class="sc">+</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>) <span class="sc">*</span> <span class="dv">1</span>, <span class="fu">c</span>(<span class="sc">-</span><span class="fl">1.2</span>, <span class="sc">-</span><span class="fl">1.2</span>, <span class="sc">-</span><span class="fl">0.1</span>), <span class="at">border =</span> COL[<span class="dv">4</span>], <span class="at">col =</span> COL[<span class="dv">4</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a><span class="fu">library</span>(openintro)</span>
+<span id="cb6-2"><a href=""></a>d <span class="ot">&lt;-</span> loan50<span class="sc">$</span>interest_rate</span>
+<span id="cb6-3"><a href=""></a>xlim <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">0.9</span> <span class="sc">*</span> <span class="fu">min</span>(d), <span class="fl">1.05</span> <span class="sc">*</span> <span class="fu">max</span>(d))</span>
+<span id="cb6-4"><a href=""></a>round.to <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb6-5"><a href=""></a>binned <span class="ot">&lt;-</span> round.to <span class="sc">*</span> <span class="fu">round</span>(d<span class="sc">/</span>round.to)</span>
+<span id="cb6-6"><a href=""></a>tab <span class="ot">&lt;-</span> <span class="fu">table</span>(binned)</span>
+<span id="cb6-7"><a href=""></a>M <span class="ot">&lt;-</span> <span class="fu">mean</span>(d)</span>
+<span id="cb6-8"><a href=""></a>cex <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb6-9"><a href=""></a><span class="fu">plot</span>(<span class="dv">0</span>, <span class="at">type =</span> <span class="st">"n"</span>, <span class="at">xlab =</span> <span class="st">"Interest Rate, Rounded to Nearest Percent"</span>, <span class="at">ylab =</span> <span class="st">""</span>,</span>
+<span id="cb6-10"><a href=""></a>    <span class="at">axes =</span> <span class="cn">FALSE</span>, <span class="at">xlim =</span> xlim, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="fl">1.5</span> <span class="sc">*</span> <span class="fu">max</span>(tab)))</span>
+<span id="cb6-11"><a href=""></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(tab)) {</span>
+<span id="cb6-12"><a href=""></a>    <span class="fu">points</span>(<span class="fu">rep</span>(<span class="fu">as.numeric</span>(<span class="fu">names</span>(tab[i])), tab[i]), <span class="fl">1.5</span> <span class="sc">*</span> (<span class="dv">1</span><span class="sc">:</span>tab[i]) <span class="sc">-</span> <span class="fl">0.4</span>, <span class="at">pch =</span> <span class="dv">19</span>,</span>
+<span id="cb6-13"><a href=""></a>        <span class="at">col =</span> COL[<span class="dv">1</span>], <span class="at">cex =</span> <span class="dv">2</span> <span class="sc">*</span> cex)</span>
+<span id="cb6-14"><a href=""></a>}</span>
+<span id="cb6-15"><a href=""></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>)</span>
+<span id="cb6-16"><a href=""></a><span class="fu">AxisInPercent</span>(<span class="dv">1</span>, <span class="fu">pretty</span>(<span class="fu">c</span>(<span class="dv">0</span>, d)))</span>
+<span id="cb6-17"><a href=""></a><span class="fu">polygon</span>(M <span class="sc">+</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>) <span class="sc">*</span> <span class="dv">1</span>, <span class="fu">c</span>(<span class="sc">-</span><span class="fl">1.2</span>, <span class="sc">-</span><span class="fl">1.2</span>, <span class="sc">-</span><span class="fl">0.1</span>), <span class="at">border =</span> COL[<span class="dv">4</span>], <span class="at">col =</span> COL[<span class="dv">4</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
@@ -3063,7 +3001,7 @@ Robert W. Walker
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="index_files/figure-revealjs/unnamed-chunk-9-1.svg" width="624"></p>
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-7-1.svg" width="624"></p>
 </figure>
 </div>
 </div>
@@ -3071,7 +3009,7 @@ Robert W. Walker
 <div class="quarto-auto-generated-content">
 <p><img src="AGSMlogo.jpeg" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>DADM: Week 1 (28 Aug 2024)</p>
+<p>DADM: Week 1 (26 Aug 2025)</p>
 </div>
 </div>
 </section></section>
@@ -3341,18 +3279,7 @@ Robert W. Walker
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -3384,7 +3311,29 @@ Robert W. Walker
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp('/' + window.location.host + '/');
