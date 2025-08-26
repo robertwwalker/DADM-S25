@@ -244,10 +244,7 @@ Bonds %>%
 ```
 
 
-# R Makes Data Understanding Easier
-
-
-## Installing packages
+# Radiant will be our low barrier to entry tool that is flexible enough.
 
 
 ## Takeaways
