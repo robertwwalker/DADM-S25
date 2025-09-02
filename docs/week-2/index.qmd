@@ -1,6 +1,6 @@
 ---
 title: "Data Analysis, Modeling, and Decision-Making"
-subtitle: "Lecture 1: Welcome and Introduction"
+subtitle: "Lecture 2: AI and Argumentation with Data"
 author: "Robert W. Walker"
 format: 
    revealjs:
@@ -9,7 +9,7 @@ format:
      theme: [custom.scss]
      scrollable: true
      logo: AGSMlogo.jpeg
-     footer: "DADM: Week 1 (26 Aug 2025)"
+     footer: "DADM: Week 2 (2 Sep 2025)"
      chalkboard: true
      html-math-method: katex
      incremental: true
@@ -37,25 +37,24 @@ options(
 )
 ```
 
+## Outline
 
-<iframe src="https://prezi.com/p/embed/E72vUeF6v22VkSrCfYpd/" id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen" height="600" width="800"></iframe>
-[The Link](https://prezi.com/view/E72vUeF6v22VkSrCfYpd/)
-
-## A syllabus
-
-- Let's walk through that.
-- On Canvas, Files > Syllabus
+- Catch up first day work
+- Get the cloud setup going
+- Toulmin and Argumentation with Data
+- On Artificial Intelligence
 
 ## Administrative Things
 
-- The Last Day?
+- The Last Day is set for December 2
+- A slight syllabus reorganization
 - The Group Task: Global Strategic Trends
 
 # A Bit of First Day Work
 
 ## Some Example Data
 
-The data are Bond.Funds.  We have an ID, Type, Assets, Fees [Yes or No], Expense Ratio, Returns in 2009, 3 year, 5 year, and a Risk classification.  A [link to the data in Excel format NB auto-downloads.](https://github.com/robertwwalker/DADMStuff/raw/master/BondFunds.xlsx).
+The data are Bond.Funds.  We have an ID, Type, Assets, Fees [Yes or No], Expense Ratio, Returns in 2009, 3 year, 5 year, and a Risk classification.  A [link to the data in Excel format NB auto-downloads.](https://github.com/robertwwalker/DADMStuff/raw/master/BondFunds.xlsx). [link to the data in csv format NB auto-downloads.](https://github.com/robertwwalker/DADMStuff/raw/master/BondFunds.csv).
 
 ```{r, eval=FALSE, tidy=TRUE}
 load(url("https://github.com/robertwwalker/DADMStuff/raw/master/R-Workspace-Lecture-1.RData"))
@@ -246,17 +245,57 @@ Bonds %>%
 
 # Radiant will be our low barrier to entry tool that is flexible enough.
 
+## Installing Radiant and posit.cloud
 
-## Takeaways
+1. Login to [posit.cloud](http://posit.cloud/)
+2. At the command prompt, `install.packages("radiant")`
+3. `radiant::radiant()`
 
-1. Data are everywhere; the biggest barrier is often curiosity.  
-2. In your management career, data should play roles throughout decisions.
+## `radiant` a tour
 
-## Your Task for Next Time:
+Let's grab that .csv file
+
+`https://github.com/robertwwalker/DADMStuff/raw/master/BondFunds.csv`
+
+- Visualize
+- Pivot
+
+## A Project
+
+`https://posit.cloud/content/10806641`
+
+## Our Remaining Tasks:
 
 1. Read Toulmin and examine the slide excerpt.  Do a bit of research, perhaps using an LLM, to bring yourself to a one paragraph summary.  
 2. Prepare to discuss: what is a large language model?
 3. Are LLM's authoritative sources?  What managerial challenges does this present or does it?
+
+## Karbach
+
+1. Claim
+2. Grounds
+3. Warrant
+
+## Why this Approach?
+
+- Familiarity/empathy
+- We are using the mental model people most use to make persuasive statements.
+
+## A Model
+
+From OED: [A representation of structure, and related senses.](https://www.oed.com/dictionary/model_n?tab=meaning_and_use#36510538)
+
+## What is an LLM?
+
+A model of lots of language?
+
+## On LLM's
+
+- What are they?
+- How do they work?
+- The corpus
+- [Thinking Like AI](https://www.oneusefulthing.org/p/thinking-like-an-ai)
+- Attention is all you need....
 
 ## A Postscript
 

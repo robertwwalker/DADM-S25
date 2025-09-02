@@ -395,7 +395,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Data Analysis, Modeling, and Decision-Making</h1>
-  <p class="subtitle">Lecture 1: Welcome and Introduction</p>
+  <p class="subtitle">Lecture 2: AI and Argumentation with Data</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -409,21 +409,21 @@ Robert W. Walker
 <section class="slide level2">
 
 <p><link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"></p>
-<iframe src="https://prezi.com/p/embed/E72vUeF6v22VkSrCfYpd/" id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen" height="600" width="800">
-</iframe>
-<p><a href="https://prezi.com/view/E72vUeF6v22VkSrCfYpd/">The Link</a></p>
 </section>
-<section id="a-syllabus" class="slide level2">
-<h2>A syllabus</h2>
+<section id="outline" class="slide level2">
+<h2>Outline</h2>
 <ul>
-<li class="fragment">Let’s walk through that.</li>
-<li class="fragment">On Canvas, Files &gt; Syllabus</li>
+<li class="fragment">Catch up first day work</li>
+<li class="fragment">Get the cloud setup going</li>
+<li class="fragment">Toulmin and Argumentation with Data</li>
+<li class="fragment">On Artificial Intelligence</li>
 </ul>
 </section>
 <section id="administrative-things" class="slide level2">
 <h2>Administrative Things</h2>
 <ul>
-<li class="fragment">The Last Day?</li>
+<li class="fragment">The Last Day is set for December 2</li>
+<li class="fragment">A slight syllabus reorganization</li>
 <li class="fragment">The Group Task: Global Strategic Trends</li>
 </ul>
 </section>
@@ -434,7 +434,7 @@ Robert W. Walker
 </section>
 <section id="some-example-data" class="slide level2">
 <h2>Some Example Data</h2>
-<p>The data are Bond.Funds. We have an ID, Type, Assets, Fees [Yes or No], Expense Ratio, Returns in 2009, 3 year, 5 year, and a Risk classification. A <a href="https://github.com/robertwwalker/DADMStuff/raw/master/BondFunds.xlsx">link to the data in Excel format NB auto-downloads.</a>.</p>
+<p>The data are Bond.Funds. We have an ID, Type, Assets, Fees [Yes or No], Expense Ratio, Returns in 2009, 3 year, 5 year, and a Risk classification. A <a href="https://github.com/robertwwalker/DADMStuff/raw/master/BondFunds.xlsx">link to the data in Excel format NB auto-downloads.</a>. <a href="https://github.com/robertwwalker/DADMStuff/raw/master/BondFunds.csv">link to the data in csv format NB auto-downloads.</a>.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -2939,22 +2939,68 @@ Robert W. Walker
 <h1>Radiant will be our low barrier to entry tool that is flexible enough.</h1>
 
 </section>
-<section id="takeaways" class="slide level2 scrollable">
-<h2>Takeaways</h2>
+<section id="installing-radiant-and-posit.cloud" class="slide level2 scrollable">
+<h2>Installing Radiant and posit.cloud</h2>
 <ol type="1">
-<li class="fragment">Data are everywhere; the biggest barrier is often curiosity.<br>
-</li>
-<li class="fragment">In your management career, data should play roles throughout decisions.</li>
+<li class="fragment">Login to <a href="http://posit.cloud/">posit.cloud</a></li>
+<li class="fragment">At the command prompt, <code>install.packages("radiant")</code></li>
+<li class="fragment"><code>radiant::radiant()</code></li>
 </ol>
 </section>
-<section id="your-task-for-next-time" class="slide level2 scrollable">
-<h2>Your Task for Next Time:</h2>
+<section id="radiant-a-tour" class="slide level2">
+<h2><code>radiant</code> a tour</h2>
+<p>Let’s grab that .csv file</p>
+<p><code>https://github.com/robertwwalker/DADMStuff/raw/master/BondFunds.csv</code></p>
+<ul>
+<li class="fragment">Visualize</li>
+<li class="fragment">Pivot</li>
+</ul>
+</section>
+<section id="a-project" class="slide level2">
+<h2>A Project</h2>
+<p><code>https://posit.cloud/content/10806641</code></p>
+</section>
+<section id="our-remaining-tasks" class="slide level2 scrollable">
+<h2>Our Remaining Tasks:</h2>
 <ol type="1">
 <li class="fragment">Read Toulmin and examine the slide excerpt. Do a bit of research, perhaps using an LLM, to bring yourself to a one paragraph summary.<br>
 </li>
 <li class="fragment">Prepare to discuss: what is a large language model?</li>
 <li class="fragment">Are LLM’s authoritative sources? What managerial challenges does this present or does it?</li>
 </ol>
+</section>
+<section id="karbach" class="slide level2 scrollable">
+<h2>Karbach</h2>
+<ol type="1">
+<li class="fragment">Claim</li>
+<li class="fragment">Grounds</li>
+<li class="fragment">Warrant</li>
+</ol>
+</section>
+<section id="why-this-approach" class="slide level2">
+<h2>Why this Approach?</h2>
+<ul>
+<li class="fragment">Familiarity/empathy</li>
+<li class="fragment">We are using the mental model people most use to make persuasive statements.</li>
+</ul>
+</section>
+<section id="a-model" class="slide level2">
+<h2>A Model</h2>
+<p>From OED: <a href="https://www.oed.com/dictionary/model_n?tab=meaning_and_use#36510538">A representation of structure, and related senses.</a></p>
+</section>
+<section id="what-is-an-llm" class="slide level2">
+<h2>What is an LLM?</h2>
+<p>A model of lots of language?</p>
+</section>
+<section id="on-llms" class="slide level2">
+<h2>On LLM’s</h2>
+<ul>
+<li class="fragment">What are they?</li>
+<li class="fragment">How do they work?</li>
+<li class="fragment">The corpus</li>
+<li class="fragment"><a href="https://www.oneusefulthing.org/p/thinking-like-an-ai">Thinking Like AI</a></li>
+<li class="fragment">Attention is all you need….</li>
+</ul>
 </section>
 <section id="a-postscript" class="slide level2">
 <h2>A Postscript</h2>
@@ -3007,7 +3053,7 @@ Robert W. Walker
 <div class="quarto-auto-generated-content">
 <p><img src="AGSMlogo.jpeg" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>DADM: Week 1 (26 Aug 2025)</p>
+<p>DADM: Week 2 (2 Sep 2025)</p>
 </div>
 </div>
 </section></section>
@@ -3045,7 +3091,7 @@ Robert W. Walker
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'chalkboard': {"buttons":true},
-'multiplex': {"secret":null,"id":"8d1eea3094ca7e29","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":"17247996421012972135","id":"8d1eea3094ca7e29","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -3201,7 +3247,7 @@ Robert W. Walker
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
-          
+          RevealNotes,
           RevealSearch,
           RevealZoom
         ]
