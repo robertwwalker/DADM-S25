@@ -26,29 +26,6 @@ library(dplyr)
 knitr::opts_chunk$set(fig.retina=3, fig.height=6, fig.width=9, echo=TRUE, eval=TRUE)
 ```
 
-# Getting Up and Running {background-image="./img/bg2.png" background-opacity="0.5"}
-
-1. The state file is on Canvas.  Download it.
-2. Start radiant.
-3. Load the radiant state file.
-4. **I took the liberty: there's a link....**
-
-## R's Variable Types
-
--   Factor: Qualitative labels with attached numbers. Think key-value.
--   Character: Strings of letters and numbers demarcated by quotation marks.
-
-```         
-There is 'something' or there is "something"
-There is 'Hello World!' or there is "Hello World!"
-```
-
--   Numeric \[integer, double\]
--   Complex \[if you don't know what this means, worry not\]
--   Logical
--   Date
-
-The global environment in RStudio helps us out. There is a special combined data structure in $R$ -- the `data.frame` -- that combines data of different types organized with units defining the rows and variables defining the columns; it is implicitly `tidy`.
 
 ## Woo and Broman
 
@@ -88,6 +65,30 @@ The global environment in RStudio helps us out. There is a special combined data
 ## tidy data
 
 We will think and talk about data organized in a `tidy` way where rows represent **cases/units/observations** and columns represent **variables**. Many standard forms of enterprise data are not stored in this way though they could be. Accounting data come to mind where there are `data` in the column names. There are tools that we will later encounter for `pivoting` from long to wide forms where the `tidy` and long forms are synonymous.
+
+# Getting Up and Running {background-image="./img/bg2.png" background-opacity="0.5"}
+
+1. The state file is on Canvas.  Download it.
+2. Start radiant.
+3. Load the radiant state file.
+4. **I took the liberty: there's a link....**
+
+## R's Variable Types
+
+-   Factor: Qualitative labels with attached numbers. Think key-value.
+-   Character: Strings of letters and numbers demarcated by quotation marks.
+
+```         
+There is 'something' or there is "something"
+There is 'Hello World!' or there is "Hello World!"
+```
+
+-   Numeric \[integer, double\]
+-   Complex \[if you don't know what this means, worry not\]
+-   Logical
+-   Date
+
+The global environment in RStudio helps us out. There is a special combined data structure in $R$ -- the `data.frame` -- that combines data of different types organized with units defining the rows and variables defining the columns; it is implicitly `tidy`.
 
 
 ## Two Examples with Excel Data \[Bonds\]
