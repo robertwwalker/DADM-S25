@@ -26,6 +26,21 @@ library(dplyr)
 knitr::opts_chunk$set(fig.retina=3, fig.height=6, fig.width=9, echo=TRUE, eval=TRUE)
 ```
 
+# Data Summary
+
+# Anything can be Measured
+
+If you cannot measure it, it is useless because you cannot define it.
+
+## Hubbard's Applied Information Economics
+
+1. Define the decision
+2. Determine what you know now [h/t Don Rumsfeld]
+3. Measure where information value is high
+4. Make decisions and act
+5. Evaluate and revise?
+
+# Most Important: Don't Let the Perfect be the Enemy of the Good...
 
 ## Woo and Broman
 
