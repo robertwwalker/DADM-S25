@@ -45,6 +45,8 @@ load(url("https://github.com/robertwwalker/DADMStuff/raw/master/Week3Data.RData"
 
 ## Basic Data Visualization
 
+Particularly for qualitative variables, radiant is quite limited.
+
 - [One Qualitative Variable](https://robertwwalker.github.io/DADM-FAQ/posts/visualizing-one-qualitative-variable/)   
 - [One Quantitative Variable](https://robertwwalker.github.io/DADM-FAQ/posts/visualizing-one-quantitative-variable/)
 - [Two Qualitative Variables](https://robertwwalker.github.io/DADM-FAQ/posts/visualizing-two-qualities/)   
