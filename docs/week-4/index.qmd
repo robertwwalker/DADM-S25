@@ -398,4 +398,9 @@ $$ Pr(x | y) = \frac{Pr(y | x) Pr(x)}{Pr(y)} $$
 
 Three nodes: guilty and not at each, convict at the third.
 
+## Bayesian Reasoning is Core to Toulmin's Thinking {background-image="img/BayesRuleRWW.jpeg"}
+[
+$$ Pr(Decision | data) = \frac{Pr(data | Decision) Pr(Decision)}{Pr(Data)} $$
+]{style="color:red;"}
+
 # The Page on Global Strategic Trends
