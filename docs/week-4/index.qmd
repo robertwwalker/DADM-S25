@@ -83,14 +83,19 @@ Prob.Def <- readPNG("img/ETJ-Probability.png")
 grid::grid.raster(Prob.Def)
 ```
 
-
-
 # Probability
 
 Two rules:   
 
 1. Probabilities sum to one.
 2. The probability of any event is greater than or equal to zero.
+
+## Why Jaynes?
+
+His approach is intuitive.  If you are familiar with probability already, some of you have formal training, Appendix A sets out the key differences.
+
+Why did I ask you to read this?  He builds a basic foundation.  He derives rules.  Those rules are the same rules that we will deploy.  But he does it from more basic foundations.  Yes, he can do math. That's not the point; there is a simple representation of all of these ideas.
+
 
 ## Where does Probability Come From?
 
@@ -100,6 +105,7 @@ There are three common sources of probabilities:
 - Empirical frequency
 - Subjective belief
 
+**Jaynes is a proponent of the latter.**
 
 ## A priori probability
 
@@ -380,3 +386,14 @@ ggplot(UCBAdmit) + aes(x=M.F, fill=Admit) + geom_bar(position="fill") + scale_fi
 To find the joint probability [the intersection] of x and y, we can use either of the aforementioned methods.  To turn this into a conditional probability, we simply take it is a proportion of the relevant margin.
 
 $$ Pr(x | y) = \frac{Pr(y | x) Pr(x)}{Pr(y)} $$
+
+## A Bit on Juries
+
+- Start from Section 3.2.7
+- The juror's decision tree
+
+![Tree](img/JTree2.png)
+
+Three nodes: guilty and not at each, convict at the third.
+
+# The Page on Global Strategic Trends
