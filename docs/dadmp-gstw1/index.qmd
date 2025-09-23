@@ -128,8 +128,8 @@ factorial(59)/(factorial(5)*factorial(54))*35
 
 ## New Powerball
 
-Five white balls: 1 through 69
-One red powerball: 1 through 26
+- Five white balls: 1 through 69
+- One red powerball: 1 through 26
 
 ## Random Variables
 
@@ -152,6 +152,8 @@ What does it mean to say something **is independent** of something else?
 - Admissions
 
 # Setting the Context for GST 7
+
+Note the data of dissemination.
 
 # GST 6
 
