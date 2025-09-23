@@ -1,6 +1,9 @@
 ---
 title: "Esquisse"
-format: html
+format: 
+   html:
+     theme: superhero
+     embed-resources: true
 ---
 
 ## Selecting Data

@@ -146,10 +146,27 @@ What does it mean to say something **is independent** of something else?
 
 - The simplest way to think about it is, "do I learn something more about x by knowing y than not".  If two things are independent, I don't need to care about y if x is my objective.
 
-## Two Examples of Simpson's Paradox
+## Two Examples of Simpson's Paradox for Homework
 
 - Discrimination
 - Admissions
+
+## Introducing Esquisse
+
+![Esquisse](img/esquisse.png)
+
+## Executing
+
+`esquisse:::esquisser(viewer="browser")`
+
+**NB: It needs to run in a separate browser window.**
+
+## Selecting Data
+
+What is available in the environment?
+
+[A Run Through](./esquisse.html)
+
 
 # Setting the Context for GST 7
 
