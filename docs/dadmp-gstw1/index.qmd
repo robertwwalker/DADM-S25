@@ -146,6 +146,21 @@ What does it mean to say something **is independent** of something else?
 
 - The simplest way to think about it is, "do I learn something more about x by knowing y than not".  If two things are independent, I don't need to care about y if x is my objective.
 
+## General Ideas
+
+- Expectation
+
+![Expectation](img/Exp.png)
+
+- Variance
+
+![Variance](img/Var.png)
+
+Part of 3.4 are incomplete.
+
+- **Covariance**
+- **Linear Functions of Random Variables**
+
 ## Two Examples of Simpson's Paradox for Homework
 
 - Discrimination
