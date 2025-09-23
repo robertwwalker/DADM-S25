@@ -1,8 +1,10 @@
 ---
-title: "Happiness"
+title: "Happiness and Maps"
 author: "Robert W. Walker"
 date: "2025-09-18"
-format: html
+format: 
+   html:
+     theme: superhero
 ---
 
 ```{r setup, include=FALSE}
