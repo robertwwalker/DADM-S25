@@ -402,3 +402,66 @@ vdem_map %>%
   theme_minimal()
 ```
 
+## Democracy data
+
+```{r}
+library(democracyData)
+library(tidyverse)
+library(magrittr)       # for pipes
+library(ggstream)       # proportion plots
+library(ggthemes)       # nice ggplot themes
+library(forcats)        # reorder factor variables
+library(ggflags)        # add flags
+library(peacesciencer)  # more great polisci data
+library(countrycode)    # add ISO codes to countries
+library(gganimate)
+
+pacl %<>% 
+  mutate(regime_name = ifelse(regime == 0, "Parliamentary democracies",
+       ifelse(regime == 1, "Mixed democracies",
+       ifelse(regime == 2, "Presidential democracies",
+       ifelse(regime == 3, "Civilian autocracies",
+       ifelse(regime == 4, "Military dictatorships",
+       ifelse(regime ==  5,"Royal dictatorships", regime))))))) %>%
+  mutate(regime = as.factor(regime)) 
+
+regime_palette <- c("Military dictatorships" = "#f94144", 
+                    "Civilian autocracies" = "#f3722c", 
+                    "Royal dictatorships" =  "#f8961e", 
+                    "Mixed democracies" = "#f9c74f", 
+                    "Presidential democracies" = "#90be6d", 
+                    "Parliamentary democracies" = "#43aa8b")
+pacl %>% 
+  mutate(regime_name = as.factor(regime_name)) %>% 
+  mutate(regime_name = fct_relevel(regime_name, "Parliamentary democracies", "Presidential democracies", "Mixed democracies", "Royal dictatorships", "Civilian autocracies", "Military dictatorships")) %>% 
+  group_by(year, un_continent_name) %>% 
+  filter(!is.na(regime_name)) %>% 
+  count(regime_name) %>% 
+  ungroup() %>%  
+  filter(un_continent_name != "") %>%
+  filter(un_continent_name != "Oceania") -> pacl_count
+
+pacl_count %>% 
+    ggplot(aes(x = year, y = n, 
+               groups = regime_name, 
+               fill = regime_name)) +
+    ggstream::geom_stream(type = "proportion") + 
+    facet_wrap(~un_continent_name) + 
+    scale_fill_manual(values = regime_palette) + 
+    ggthemes::theme_fivethirtyeight() + 
+    theme(legend.title = element_blank(),
+          text = element_text(size = 14)) 
+```
+
+## Regimes
+
+```{r Animation}
+pacl_map <- left_join(worldmap, pacl, by=c("ADM0_A3" = "wdicode"))
+animate.me <- pacl_map %>%  ggplot() + aes(fill=regime_name) + geom_sf(szie=0.1) + scale_fill_viridis_d()+ theme_map() + labs(title="Regimes around the World  - {closest_state}", fill="Regime Type") + transition_states(year)
+animate.me
+```
+
+```{r}
+pacl_map %>% filter(year==2008) %>%  ggplot() + aes(fill=regime_name) + geom_sf(szie=0.1) + scale_fill_viridis_d()+ theme_map() + labs(title="Regimes around the World: 2008", fill="Regime Type")
+```
+
